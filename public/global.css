@@ -21,6 +21,11 @@ body {
   background: #252835;
 }
 
+p {
+  font-family: "Arvo", sans-serif;
+  font-size: 2rem;
+}
+
 a {
   color: rgb(0, 100, 200);
   text-decoration: none;
