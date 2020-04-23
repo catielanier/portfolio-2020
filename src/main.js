@@ -8,8 +8,8 @@ const app = new App({
 
 const typed = new Typed("#typed", {
   stringsElement: "#typed-strings",
-  typeSpeed: 50,
-  backSpeed: 25,
+  typeSpeed: 30,
+  backSpeed: 30,
   loop: true,
   loopCount: Infinity,
   smartBackspace: true,

@@ -26,20 +26,24 @@
 
 <style>
   h1 {
-    color: #ff3e00;
     font-family: "Comfortaa", sans-serif;
-    text-transform: uppercase;
-    font-size: 5rem;
-    height: 5.1rem;
+    font-size: 8.5rem;
+    height: 8.6rem;
+  }
+
+  header {
+    margin-top: 120px;
   }
 </style>
 
-<div>
-  <MenuBar />
+<MenuBar />
+<header>
   <h1>
     <div id="typed-strings">
       {#each languageGreetings as greeting}
-        <p class={`greeting-{greeting.lang}`}>{greeting.text}!</p>
+        <p class={`greeting-${greeting.lang}`} key={greeting.lang}>
+          {greeting.text}!
+        </p>
       {/each}
     </div>
     <span id="typed" />
@@ -49,4 +53,4 @@
     <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
     to learn how to build Svelte apps.
   </p>
-</div>
+</header>
