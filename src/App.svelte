@@ -1,6 +1,11 @@
 <script>
   import MenuBar from "./components/MenuBar.svelte";
-  export let name;
+  const languageGreetings = [
+    "Hello all",
+    "大家好",
+    "여러분 안녕하세요",
+    "皆さんこんにちは"
+  ];
 </script>
 
 <style>
@@ -14,7 +19,7 @@
 
 <div>
   <MenuBar />
-  <h1>Hello {name}!</h1>
+  <h1>{languageGreetings[0]}!</h1>
   <p>
     Visit the
     <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
