@@ -1,6 +1,6 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
+  "name": "corey-lanier-portfolio",
+  "version": "2.0.0",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -17,5 +17,15 @@
   },
   "dependencies": {
     "sirv-cli": "^0.4.4"
+  },
+  "now": {
+    "alias": "portfolio",
+    "name": "corey-lanier-portfolio",
+    "routes": [
+      {
+        "src": "/",
+        "dest": "index.html"
+      }
+    ]
   }
 }
