@@ -1,20 +1,36 @@
 <script>
   import MenuBar from "./components/MenuBar.svelte";
   const languageGreetings = [
-    "Hello all",
-    "大家好",
-    "여러분 안녕하세요",
-    "皆さんこんにちは",
-    "Saluton al ĉiuj"
+    {
+      text: "Hello all",
+      lang: "en"
+    },
+    {
+      text: "大家好",
+      lang: "zh"
+    },
+    {
+      text: "여러분 안녕하세요",
+      lang: "ko"
+    },
+    {
+      text: "皆さんこんにちは",
+      lang: "ja"
+    },
+    {
+      text: "Saluton al ĉiuj",
+      lang: "eo"
+    }
   ];
 </script>
 
 <style>
   h1 {
     color: #ff3e00;
+    font-family: "Comfortaa", sans-serif;
     text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100;
+    font-size: 5rem;
+    height: 5.1rem;
   }
 </style>
 
@@ -23,7 +39,7 @@
   <h1>
     <div id="typed-strings">
       {#each languageGreetings as greeting}
-        <p>{greeting}!</p>
+        <p class={`greeting-{greeting.lang}`}>{greeting.text}!</p>
       {/each}
     </div>
     <span id="typed" />
