@@ -20,7 +20,14 @@
 
 <div>
   <MenuBar />
-  <h1>{languageGreetings[0]}!</h1>
+  <h1>
+    <div id="typed-strings">
+      {#each languageGreetings as greeting}
+        <p>{greeting}!</p>
+      {/each}
+    </div>
+    <span id="typed" />
+  </h1>
   <p>
     Visit the
     <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
