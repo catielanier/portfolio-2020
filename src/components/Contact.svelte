@@ -1,8 +1,15 @@
 <script>
-
+  import axios from "axios";
+  let name = "";
+  let email = "";
+  let message = "";
 </script>
 
 <style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .email {
     font-family: "Comfortaa", sans-serif;
     font-size: 1.7rem;
@@ -19,6 +26,26 @@
   .contact-gap div img {
     width: 100%;
   }
+  input,
+  textarea {
+    width: 100%;
+    background: #252835;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    border-bottom: 2px solid #0557a3;
+    font-family: "Arvo", serif;
+    font-size: 1.8rem;
+    transition: 0.5 all ease-in-out;
+  }
+  input:focus,
+  textarea:focus {
+    border-bottom: 2px solid #b3cde0;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #fff;
+  }
 </style>
 
 <section id="contact">
@@ -27,17 +54,33 @@
     Let's create internet masterpieces together! If you want to hire or
     commission me for work, please contact me in one of the ways below.
   </p>
-  <p class="email">Email: iam@coreylanier.com</p>
-  <div class="contact-gap">
+  <div class="grid-container">
     <div>
-      <a href="https://github.com/lanierc">
-        <img src="assets/github.png" alt="Github" />
-      </a>
+      <p class="email">Email: iam@coreylanier.com</p>
+      <div class="contact-gap">
+        <div>
+          <a href="https://github.com/lanierc">
+            <img src="assets/github.png" alt="Github" />
+          </a>
+        </div>
+        <div>
+          <a href="https://linkedin.com/in/cwlanier">
+            <img src="assets/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
     </div>
     <div>
-      <a href="https://linkedin.com/in/cwlanier">
-        <img src="assets/linkedin.png" alt="LinkedIn" />
-      </a>
+      <form>
+        <input type="text" bind:value={name} placeholder="Your name" />
+        <input type="text" bind:value={email} placeholder="Email address" />
+        <textarea
+          placeholder="Your message"
+          bind:value={message}
+          cols="30"
+          rows="10" />
+        <button type="submit">Send email</button>
+      </form>
     </div>
   </div>
 </section>
