@@ -12,13 +12,26 @@ body {
 body {
   color: #fff;
   margin: 0;
-  padding: 8px;
+  padding: 0;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   max-width: 1280px;
   margin: 0 auto;
   background: #252835;
+}
+
+main {
+  padding-top: 222px;
+  background: url("assets/squig.png");
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  font-family: "Neuton", serif;
+  font-size: 4.8rem;
+  margin: 0;
 }
 
 p {
@@ -33,10 +46,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-a:visited {
-  color: rgb(0, 80, 160);
 }
 
 label {

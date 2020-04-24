@@ -31,11 +31,13 @@
   }
 
   header {
-    margin-top: 120px;
+    padding-top: 120px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
     align-items: center;
+    max-width: 1280px;
+    width: 100%;
   }
   img {
     width: 100%;
