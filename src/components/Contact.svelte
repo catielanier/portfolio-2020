@@ -84,6 +84,16 @@
   textarea::placeholder {
     color: #fff;
   }
+  button {
+    font-family: "Neuton", serif;
+    font-size: 2.4rem;
+    border: 0;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    background: #b3cde0;
+    color: #252835;
+  }
 </style>
 
 <section id="contact">
