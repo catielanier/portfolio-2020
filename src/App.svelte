@@ -4,6 +4,7 @@
   import Skills from "./components/Skills.svelte";
   import Portfolio from "./components/Portfolio.svelte";
   import Contact from "./components/Contact.svelte";
+  import Footer from "./components/Footer.svelte";
 </script>
 
 <MenuBar />
@@ -13,3 +14,4 @@
   <Portfolio />
   <Contact />
 </main>
+<Footer />
