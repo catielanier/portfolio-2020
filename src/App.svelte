@@ -3,6 +3,7 @@
   import Header from "./components/Header.svelte";
   import Skills from "./components/Skills.svelte";
   import Portfolio from "./components/Portfolio.svelte";
+  import Contact from "./components/Contact.svelte";
 </script>
 
 <MenuBar />
@@ -10,4 +11,5 @@
 <main>
   <Skills />
   <Portfolio />
+  <Contact />
 </main>

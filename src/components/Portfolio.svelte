@@ -56,7 +56,10 @@
     margin-bottom: 0;
   }
   .grid-container {
-    margin: 0 auto;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 35px;
   }
   p.tools {
     margin-top: 0;

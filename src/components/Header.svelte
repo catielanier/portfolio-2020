@@ -62,9 +62,9 @@
       <span id="typed" />
     </h1>
     <p>
-      Hello, my name is Corey Lanier, and I am a multilingual (English,
-      Mandarin, Korean, Japanese, Esperanto) web developer based in Toronto. I
-      am a graduate of HackerYou's Web Development Immersive, and am completely
+      My name is Corey Lanier, and I am a multilingual (English, Mandarin,
+      Korean, Japanese, Esperanto) web developer based in Toronto. I am a
+      graduate of HackerYou's Web Development Immersive, and am completely
       fluent in Front End and Full Stack development.
     </p>
     <p>
