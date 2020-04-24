@@ -49,7 +49,7 @@
   }
 </style>
 
-<header id="#home">
+<header id="home">
   <div>
     <h1>
       <div id="typed-strings">
