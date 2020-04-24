@@ -101,10 +101,6 @@
     visibility: visible;
   }
 
-  .svg {
-    transition: all 0.2s ease-in-out;
-  }
-
   .skill:hover .svg {
     filter: invert(0.5) brightness(100);
   }
