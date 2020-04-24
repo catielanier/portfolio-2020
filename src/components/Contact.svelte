@@ -3,6 +3,44 @@
   let name = "";
   let email = "";
   let message = "";
+  let success = false;
+  let error = false;
+
+  function handleServerResponse(ok, msg, form) {
+    success = ok;
+    error = !ok;
+    if (ok) {
+      name = "";
+      email = "";
+      message = "";
+    }
+  }
+
+  async function submitForm(e) {
+    e.preventDefault();
+    let ip;
+    await axios.get("https://api.ipify.org?format=json").then(res => {
+      ip = res.data.ip;
+    });
+    console.log(ip);
+    const form = {
+      name,
+      email,
+      message,
+      ip
+    };
+    await axios({
+      method: "post",
+      url: "https://formspree.io/iam@coreylanier.com",
+      data: new FormData(form)
+    })
+      .then(r => {
+        handleServerResponse(true, "Thanks!", form);
+      })
+      .catch(r => {
+        handleServerResponse(false, r.response.data.error, form);
+      });
+  }
 </script>
 
 <style>
@@ -71,7 +109,7 @@
       </div>
     </div>
     <div>
-      <form>
+      <form on:submit={submitForm}>
         <input type="text" bind:value={name} placeholder="Your name" />
         <input type="text" bind:value={email} placeholder="Email address" />
         <textarea
