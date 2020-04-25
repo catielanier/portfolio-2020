@@ -1,12 +1,6 @@
 <script>
-  import { onMount } from "svelte";
   import axios from "axios";
-  onMount(async () => {
-    const res = await fetch("https://api.ipify.org?format=json");
-    const json = await res.json();
-    ip = json.ip;
-  });
-  let ip;
+  export let ip;
   let name = "";
   let email = "";
   let message = "";
