@@ -30,12 +30,21 @@
   });
 </script>
 
-<MenuBar />
-<Header />
-<main>
-  <Skills />
-  <Portfolio />
-  <Blog {posts} />
-  <Contact {ip} />
-</main>
+<style>
+  div {
+    width: 95%;
+    margin: 0 auto;
+  }
+</style>
+
+<div>
+  <MenuBar />
+  <Header />
+  <main>
+    <Skills />
+    <Portfolio />
+    <Blog {posts} />
+    <Contact {ip} />
+  </main>
+</div>
 <Footer />
