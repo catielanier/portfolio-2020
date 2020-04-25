@@ -13,7 +13,7 @@
   onMount(async () => {
     const blogPosts = [];
     const res = await axios({
-      url: "http://proxy.hackeryou.com",
+      url: "https://proxy.hackeryou.com",
       method: "GET",
       dataType: "json",
       params: {

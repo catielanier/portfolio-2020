@@ -22,7 +22,7 @@
     "typed.js": "^2.0.11"
   },
   "now": {
-    "alias": "portfolio",
+    "alias": "corey-lanier-portfolio",
     "name": "corey-lanier-portfolio",
     "routes": [
       {
