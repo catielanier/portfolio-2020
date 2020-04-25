@@ -60,6 +60,7 @@
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-gap: 35px;
+    align-items: center;
   }
   p.tools {
     margin-top: 0;
@@ -82,6 +83,10 @@
 
   .link a:hover span {
     color: #0557a3;
+  }
+
+  .grid-container img {
+    width: 100%;
   }
 </style>
 
@@ -106,7 +111,9 @@
           </a>
         </div>
       </div>
-      <div />
+      <div>
+        <img src={`assets/${piece.imageName}.png`} alt={piece.title} />
+      </div>
     </div>
   {/each}
 </section>
