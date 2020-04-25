@@ -94,12 +94,14 @@
         <p class="tools">{piece.tools}</p>
         <p>{piece.description}</p>
         <div class="link">
-          <a href={piece.previewLink}>
+          <a href={piece.previewLink} target="_blank">
             <span>View the project online.</span>
           </a>
         </div>
         <div class="link">
-          <a href={`https://github.com/lanierc/${piece.githubRepo}`}>
+          <a
+            href={`https://github.com/lanierc/${piece.githubRepo}`}
+            target="_blank">
             <span>View the source code.</span>
           </a>
         </div>
