@@ -1,8 +1,7 @@
 <style>
   footer {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    width: 100%;
+    margin: 40px auto 20px;
+    width: 90%;
     max-width: 1280px;
     background: #b3cde0;
     font-family: "Neuton", sans-serif;
@@ -11,6 +10,12 @@
     font-size: 2rem;
     border-radius: 5px;
     padding: 5px 10px 11.5px;
+  }
+  @media (max-width: 414px) {
+    footer {
+      font-size: 1.8rem;
+      padding-bottom: 10px;
+    }
   }
 </style>
 

@@ -59,6 +59,12 @@
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
+
+  @media (max-width: 414px) {
+    li {
+      padding-right: 5%;
+    }
+  }
 </style>
 
 <section id="blog">
