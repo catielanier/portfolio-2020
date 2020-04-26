@@ -104,6 +104,21 @@
   .skill:hover .svg {
     filter: invert(0.5) brightness(100);
   }
+
+  @media (max-width: 414px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0;
+    }
+
+    img {
+      height: 4rem;
+    }
+
+    .skill-name {
+      visibility: visible;
+    }
+  }
 </style>
 
 <section id="skills">

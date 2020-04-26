@@ -78,6 +78,14 @@
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
   }
+
+  @media (max-width: 414px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr;
+      grid-gap: 0;
+    }
+  }
 </style>
 
 <section id="contact">

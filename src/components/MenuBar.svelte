@@ -50,6 +50,8 @@
     width: 45px;
     height: 45px;
     z-index: 5;
+    background: #252835;
+    border-radius: 5px;
   }
 
   .menu img {

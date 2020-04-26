@@ -88,6 +88,17 @@
   .grid-container img {
     width: 100%;
   }
+
+  @media (max-width: 414px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr;
+    }
+
+    .grid-container > div:first-of-type {
+      grid-row: 2;
+    }
+  }
 </style>
 
 <section id="portfolio">
