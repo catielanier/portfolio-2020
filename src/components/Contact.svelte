@@ -79,6 +79,10 @@
     transform: rotate(4deg);
   }
 
+  textarea {
+    resize: none;
+  }
+
   @media (max-width: 414px) {
     .grid-container {
       grid-template-columns: 1fr;
