@@ -36,8 +36,6 @@
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
     align-items: center;
-    max-width: 1280px;
-    width: 100%;
   }
   img {
     width: 100%;
@@ -46,6 +44,33 @@
   }
   .header-image {
     border-radius: 45%;
+  }
+
+  @media (max-width: 414px) {
+    h1 {
+      font-size: 3.8rem;
+      height: 3.9rem;
+    }
+    header {
+      padding-top: 50px;
+      grid-template-rows: 1fr 2fr;
+      grid-template-columns: 100%;
+      grid-auto-flow: dense;
+      margin: 0 auto;
+      grid-gap: 0;
+    }
+
+    header div:first-of-type {
+      grid-row: 2;
+    }
+
+    header div:last-child {
+      text-align: center;
+    }
+
+    img {
+      transform: none;
+    }
   }
 </style>
 

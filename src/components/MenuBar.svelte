@@ -6,6 +6,12 @@
     { label: "blog", location: "#blog" },
     { label: "contact", location: "#contact" }
   ];
+  let menu = false;
+
+  const showMenu = e => {
+    menu = !menu;
+    console.log(menu);
+  };
 </script>
 
 <style>
@@ -38,8 +44,81 @@
     text-decoration: none;
     color: #fff;
   }
+
+  .menu {
+    display: none;
+    width: 45px;
+    height: 45px;
+    z-index: 5;
+  }
+
+  .menu img {
+    width: 100%;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .show {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+    z-index: 10;
+    background: #b3cde0;
+  }
+
+  .mobile-menu.show {
+    display: block;
+    top: 0;
+    right: 0;
+  }
+
+  .close-menu {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+  }
+
+  .close-menu img {
+    width: 100%;
+  }
+
+  .flex-container {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    font-family: "Neuton", serif;
+    text-transform: capitalize;
+    font-size: 2.8rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  @media (max-width: 414px) {
+    nav {
+      display: none;
+    }
+
+    .menu {
+      display: block;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+    }
+  }
 </style>
 
+<div>
+  <a href="#" class="menu" on:click={showMenu}>
+    <img src="assets/menu.png" alt="Menu" />
+  </a>
+</div>
 <nav>
   <ul>
     {#each navBarItems as item, index}
@@ -49,3 +128,17 @@
     {/each}
   </ul>
 </nav>
+<div class={!menu ? 'mobile-menu' : 'mobile-menu show'}>
+  <div class="close-menu">
+    <a href="#" on:click={showMenu}>
+      <img src="assets/x.png" alt="Close Menu" />
+    </a>
+  </div>
+  <div class="flex-container">
+    {#each navBarItems as item, index}
+      <div key={index}>
+        <a href={item.location} on:click={showMenu}>{item.label}</a>
+      </div>
+    {/each}
+  </div>
+</div>
