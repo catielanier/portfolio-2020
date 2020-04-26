@@ -31,19 +31,45 @@
 </script>
 
 <style>
-  div {
+  .container {
     width: 95%;
     margin: 0 auto;
   }
+
+  .divider {
+    margin: 6rem 0;
+    position: relative;
+    height: 2px;
+  }
+
+  .div-transparent:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgb(179, 205, 224),
+      transparent
+    );
+  }
 </style>
 
-<div>
+<div class="container">
   <MenuBar />
   <Header />
   <main>
+    <div class="divider div-transparent" />
     <Skills />
+    <div class="divider div-transparent" />
     <Portfolio />
+    <div class="divider div-transparent" />
     <Blog {posts} />
+    <div class="divider div-transparent" />
     <Contact {ip} />
   </main>
 </div>
