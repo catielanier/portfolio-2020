@@ -1,7 +1,7 @@
 <style>
   footer {
     margin: 40px auto 20px;
-    width: 90%;
+    width: 100%;
     max-width: 1280px;
     background: #b3cde0;
     font-family: "Neuton", sans-serif;
