@@ -57,6 +57,12 @@
       transparent
     );
   }
+
+  @media (max-width: 414px) {
+    .container {
+      width: 90%;
+    }
+  }
 </style>
 
 <div class="container">
