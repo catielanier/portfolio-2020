@@ -10,7 +10,27 @@
     font-size: 2rem;
     border-radius: 5px;
     padding: 5px 10px 11.5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+
+  .framework {
+    text-align: right;
+  }
+
+  a {
+    color: #252835;
+    text-decoration: underline;
+  }
+
+  a span {
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:hover span {
+    color: #fff;
+  }
+
   @media (max-width: 414px) {
     footer {
       font-size: 1.8rem;
@@ -19,4 +39,12 @@
   }
 </style>
 
-<footer>© 2020 Corey Lanier, all rights reserved.</footer>
+<footer>
+  <div class="copyright">© 2020 Corey Lanier, all rights reserved.</div>
+  <div class="framework">
+    Created using
+    <a href="https://svelte.dev" target="_blank">
+      <span>Svelte</span>
+    </a>
+  </div>
+</footer>

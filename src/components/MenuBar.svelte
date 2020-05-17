@@ -39,6 +39,7 @@
   }
   a {
     color: #252835;
+    transition: all 0.3s ease-in-out;
   }
   a:hover {
     text-decoration: none;

@@ -114,12 +114,13 @@
   }
 
   .skill-name {
-    visibility: hidden;
+    color: #252835;
     margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
   }
 
   .skill:hover .skill-name {
-    visibility: visible;
+    color: #fff;
   }
 
   .skill:hover {
