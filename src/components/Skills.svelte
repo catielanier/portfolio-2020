@@ -138,7 +138,7 @@
     }
 
     .skill-name {
-      visibility: visible;
+      color: #fff;
     }
   }
 </style>
