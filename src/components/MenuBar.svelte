@@ -10,7 +10,6 @@
 
   const showMenu = e => {
     menu = !menu;
-    console.log(menu);
   };
 </script>
 
