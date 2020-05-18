@@ -28,7 +28,7 @@
       imageName: "name-changer"
     },
     {
-      title: "Stream This",
+      title: "Twitch Finder",
       tools: "React / Sass / API",
       description:
         "This app is able to find available live streams on the Twitch service, and list them on your page by most popular, and allow you to click through to the stream. It also works around Twitch's limtations on maximum API calls per minute.",
