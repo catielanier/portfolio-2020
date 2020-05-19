@@ -30,10 +30,14 @@
   a:hover span {
     color: #fff;
   }
+  @media (max-width: 1024px) {
+    footer {
+      width: 90%;
+    }
+  }
 
   @media (max-width: 414px) {
     footer {
-      width: 90%;
       font-size: 1.8rem;
       padding-bottom: 10px;
       grid-template-rows: 1fr;

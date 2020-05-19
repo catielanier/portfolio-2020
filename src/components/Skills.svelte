@@ -127,14 +127,16 @@
     border: 1px solid #fff;
   }
 
-  @media (max-width: 768px) {
-    .grid-container {
-      grid-gap: 0;
-    }
+  @media (max-width: 1024px) {
     .skill-name {
       color: #fff;
     }
+    .grid-container {
+      grid-gap: 0;
+    }
+  }
 
+  @media (max-width: 768px) {
     img {
       height: 5.5rem;
     }

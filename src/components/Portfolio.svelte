@@ -88,6 +88,12 @@
   .grid-container img {
     width: 100%;
   }
+  @media (max-width: 768px) {
+    .grid-container {
+      align-items: initial;
+      grid-template-columns: 1.2fr 1fr;
+    }
+  }
 
   @media (max-width: 414px) {
     .grid-container {

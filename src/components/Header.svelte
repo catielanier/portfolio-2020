@@ -46,14 +46,21 @@
     border-radius: 45%;
   }
 
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 6.6rem;
+      height: 6.7rem;
+    }
+  }
+
   @media (max-width: 768px) {
     header {
       grid-template-columns: 1.5fr 1fr;
       align-items: initial;
     }
     h1 {
-      font-size: 4.9rem;
-      height: 5rem;
+      font-size: 4.4rem;
+      height: 4.5rem;
     }
   }
 

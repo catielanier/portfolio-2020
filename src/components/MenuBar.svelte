@@ -102,6 +102,11 @@
     justify-content: space-around;
     align-items: center;
   }
+  @media (max-width: 1024px) {
+    nav {
+      width: 90%;
+    }
+  }
   @media (max-width: 414px) {
     nav {
       display: none;

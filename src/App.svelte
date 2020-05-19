@@ -58,7 +58,7 @@
     );
   }
 
-  @media (max-width: 414px) {
+  @media (max-width: 1280px) {
     .container {
       width: 90%;
     }
