@@ -30,7 +30,7 @@
   a:hover span {
     color: #fff;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1280px) {
     footer {
       width: 90%;
     }
