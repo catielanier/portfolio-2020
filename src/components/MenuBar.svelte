@@ -9,6 +9,7 @@
   let menu = false;
 
   const showMenu = e => {
+    e.preventDefault();
     menu = !menu;
   };
 </script>
