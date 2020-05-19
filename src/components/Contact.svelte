@@ -18,10 +18,10 @@
   }
   .contact-gap {
     margin-top: 35px;
-    max-width: 85px;
+    max-width: 125px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
   .contact-gap div img {
@@ -110,6 +110,13 @@
         <div>
           <a href="https://linkedin.com/in/cwlanier" target="_blank">
             <img src="assets/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.upwork.com/freelancers/~0136715eaa3911f2ac"
+            target="_blank">
+            <img src="assets/upwork.png" alt="Upwork" />
           </a>
         </div>
       </div>

@@ -21,7 +21,7 @@
   }
   li span.link {
     color: white;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   li > span a:hover span.link {
     color: #0557a3;

@@ -32,7 +32,7 @@
 
 <style>
   .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -56,6 +56,12 @@
       rgb(179, 205, 224),
       transparent
     );
+  }
+
+  @media (max-width: 414px) {
+    .container {
+      width: 90%;
+    }
   }
 </style>
 

@@ -36,6 +36,16 @@
       file: "node"
     },
     {
+      name: "Express",
+      type: "Backend",
+      file: "express"
+    },
+    {
+      name: "Python",
+      type: "Backend",
+      file: "python"
+    },
+    {
       name: "MongoDB",
       type: "Backend",
       file: "mongo"
@@ -61,6 +71,11 @@
       file: "javascript"
     },
     {
+      name: "jQuery",
+      type: "Frontend",
+      file: "jquery"
+    },
+    {
       name: "CSS",
       type: "Frontend",
       file: "css"
@@ -82,12 +97,16 @@
   .grid-container {
     display: grid;
     margin-top: 75px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 25px;
   }
 
   .grid-container div {
     text-align: center;
+    border: 1px solid #252835;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
   }
 
   img {
@@ -95,14 +114,17 @@
   }
 
   .skill-name {
-    visibility: hidden;
-  }
-  .skill:hover .skill-name {
-    visibility: visible;
+    color: #252835;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
   }
 
-  .skill:hover .svg {
-    filter: invert(0.5) brightness(100);
+  .skill:hover .skill-name {
+    color: #fff;
+  }
+
+  .skill:hover {
+    border: 1px solid #fff;
   }
 
   @media (max-width: 414px) {
@@ -116,7 +138,7 @@
     }
 
     .skill-name {
-      visibility: visible;
+      color: #fff;
     }
   }
 </style>

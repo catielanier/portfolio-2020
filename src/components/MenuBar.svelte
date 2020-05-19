@@ -10,7 +10,6 @@
 
   const showMenu = e => {
     menu = !menu;
-    console.log(menu);
   };
 </script>
 
@@ -39,6 +38,7 @@
   }
   a {
     color: #252835;
+    transition: all 0.3s ease-in-out;
   }
   a:hover {
     text-decoration: none;
@@ -65,7 +65,7 @@
   .show {
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -100%;
     transition: all 0.5s ease-in-out;
@@ -110,8 +110,8 @@
     .menu {
       display: block;
       position: fixed;
-      top: 10px;
-      left: 10px;
+      top: 0px;
+      left: 0px;
     }
   }
 </style>

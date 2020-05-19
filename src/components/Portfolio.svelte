@@ -28,11 +28,11 @@
       imageName: "name-changer"
     },
     {
-      title: "Stream This",
+      title: "Twitch Finder",
       tools: "React / Sass / API",
       description:
         "This app is able to find available live streams on the Twitch service, and list them on your page by most popular, and allow you to click through to the stream. It also works around Twitch's limtations on maximum API calls per minute.",
-      previewLink: "https://coreylanier.com/twitchfinder",
+      previewLink: "https://twitchfinder.coreylanier.com",
       githubRepo: "twitch_app_project5",
       imageName: "twitch"
     },
@@ -78,7 +78,7 @@
   }
   span {
     color: #fff;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .link a:hover span {
