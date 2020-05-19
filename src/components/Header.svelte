@@ -72,6 +72,16 @@
       transform: none;
     }
   }
+
+  @media (max-width: 320px) {
+    h1 {
+      font-size: 3.2rem;
+      height: 3.3rem;
+    }
+    header {
+      grid-template-rows: 0.5fr 2fr;
+    }
+  }
 </style>
 
 <header id="home">
@@ -88,8 +98,8 @@
     </h1>
     <p>
       My name is Corey Lanier, and I am a multilingual (English, Mandarin,
-      Korean, Japanese, Esperanto) web developer based in Toronto. I am a
-      graduate of HackerYou's Web Development Immersive, and am completely
+      Korean, Japanese, Esperanto) full stack developer based in Toronto. I am a
+      graduate of Juno College's Web Development Immersive, and am completely
       fluent in Front End and Full Stack development.
     </p>
     <p>

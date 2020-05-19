@@ -43,6 +43,11 @@
       text-align: left;
     }
   }
+  @media (max-width: 320px) {
+    footer {
+      font-size: 1.6rem;
+    }
+  }
 </style>
 
 <footer>

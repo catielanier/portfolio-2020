@@ -99,6 +99,12 @@
       grid-row: 2;
     }
   }
+
+  @media (max-width: 320px) {
+    .grid-container {
+      grid-template-rows: 0.5fr 1.5fr;
+    }
+  }
 </style>
 
 <section id="portfolio">

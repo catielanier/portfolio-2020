@@ -141,6 +141,12 @@
       color: #fff;
     }
   }
+
+  @media (max-width: 320px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 </style>
 
 <section id="skills">
