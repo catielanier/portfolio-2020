@@ -120,16 +120,19 @@
           type="text"
           name="name"
           bind:value={name}
+          required
           placeholder="Your name" />
         <input
           type="email"
           name="email"
           bind:value={email}
+          required
           placeholder="Email address" />
         <textarea
           placeholder="Your message"
           name="message"
           bind:value={message}
+          required
           cols="30"
           rows="10" />
         <input type="hidden" name="ip" bind:value={ip} />
