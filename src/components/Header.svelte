@@ -73,6 +73,13 @@
     }
   }
 
+  @media (max-width: 375px) {
+    h1 {
+      font-size: 3.5rem;
+      height: 3.6rem;
+    }
+  }
+
   @media (max-width: 320px) {
     h1 {
       font-size: 3.2rem;

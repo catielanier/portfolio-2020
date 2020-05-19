@@ -142,9 +142,18 @@
     }
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 375px) {
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
+    }
+    img {
+      height: 4.5rem;
+    }
+  }
+
+  @media (max-width: 320px) {
+    img {
+      height: 4rem;
     }
   }
 </style>
