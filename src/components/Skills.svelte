@@ -127,6 +127,19 @@
     border: 1px solid #fff;
   }
 
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-gap: 0;
+    }
+    .skill-name {
+      color: #fff;
+    }
+
+    img {
+      height: 5.5rem;
+    }
+  }
+
   @media (max-width: 414px) {
     .grid-container {
       grid-template-columns: repeat(3, 1fr);
@@ -135,10 +148,6 @@
 
     img {
       height: 4rem;
-    }
-
-    .skill-name {
-      color: #fff;
     }
   }
 
