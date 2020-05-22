@@ -26,10 +26,10 @@
     });
     posts = blogPosts;
     const resIp = await axios.get(
-      "http://api.ipstack.com/check?access_key=297e4dcc7d7875c44925aff325034c15"
+      "https://api.ipgeolocation.io/ipgeo?apiKey=54de6cf316574fa59a6580f75133b847"
     );
     ip = resIp.data.ip;
-    if (resIp.data.country_code === "KR") {
+    if (resIp.data.country_code2 === "KR") {
       block = true;
     }
   });
