@@ -10,6 +10,7 @@
   import axios from "axios";
   let posts = [];
   let ip;
+  let block = false;
   onMount(async () => {
     const blogPosts = [];
     const res = await axios({
@@ -24,9 +25,13 @@
       blogPosts.push(item);
     });
     posts = blogPosts;
-    const resIp = await axios.get("https://api.ipify.org?format=json");
-    const userIp = resIp.data.ip;
-    ip = userIp;
+    const resIp = await axios.get(
+      "http://api.ipstack.com/check?access_key=297e4dcc7d7875c44925aff325034c15"
+    );
+    ip = resIp.data.ip;
+    if (resIp.data.country_code === "KR") {
+      block = true;
+    }
   });
 </script>
 
@@ -76,7 +81,7 @@
     <div class="divider div-transparent" />
     <Blog {posts} />
     <div class="divider div-transparent" />
-    <Contact {ip} />
+    <Contact {ip} {block} />
   </main>
 </div>
 <Footer />
