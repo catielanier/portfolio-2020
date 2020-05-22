@@ -8,8 +8,11 @@
   ];
   let menu = false;
 
-  const showMenu = e => {
+  const showMenuWithoutAnchor = e => {
     e.preventDefault();
+    menu = !menu;
+  };
+  const showMenu = () => {
     menu = !menu;
   };
 </script>
@@ -123,7 +126,7 @@
 </style>
 
 <div>
-  <a href="#" class="menu" on:click={showMenu}>
+  <a href="#" class="menu" on:click={showMenuWithoutAnchor}>
     <img src="assets/menu.png" alt="Menu" />
   </a>
 </div>
@@ -138,7 +141,7 @@
 </nav>
 <div class={!menu ? 'mobile-menu' : 'mobile-menu show'}>
   <div class="close-menu">
-    <a href="#" on:click={showMenu}>
+    <a href="#" on:click={showMenuWithoutAnchor}>
       <img src="assets/x.png" alt="Close Menu" />
     </a>
   </div>
