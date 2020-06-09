@@ -19,6 +19,15 @@
       imageName: "blog"
     },
     {
+      title: "Date Changer",
+      tools: "Vue / API / Node.js / Express / MongoDB",
+      description:
+        "A web app I created for iCademy Middle East that utilizes the Canvas LMS API to allow teachers to automate the process of setting assignment dates. The app runs an algorithm to check the duration of the course, the number assignments, and automatically changes the due dates at a fixed interval.",
+      previewLink: "https://icad-dubai-dates.now.sh",
+      githubRepo: "date-changer",
+      imageName: "date-changer"
+    },
+    {
       title: "Name Changer",
       tools: "React / API / Node.js / Express / Firebase",
       description:
