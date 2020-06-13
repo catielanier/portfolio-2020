@@ -21,6 +21,11 @@
       file: "svelte"
     },
     {
+      name: "Electron",
+      type: "Frontend",
+      file: "electron"
+    },
+    {
       name: "Redux",
       type: "Frontend",
       file: "redux"
@@ -44,6 +49,11 @@
       name: "Python",
       type: "Backend",
       file: "python"
+    },
+    {
+      name: "Flask",
+      type: "Backend",
+      file: "flask"
     },
     {
       name: "MongoDB",
