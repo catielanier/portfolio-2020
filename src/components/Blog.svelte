@@ -28,36 +28,109 @@
   }
 
   a.button {
-    background: #b3cde0;
-    color: #252835;
-    padding: 20px 20px 15px;
-    font-family: "Comfortaa", sans-serif;
-    font-size: 1.6rem;
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #b3cde0;
+    text-decoration: none;
     text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+    font-family: "Comfortaa", serif;
+    font-size: 1.6rem;
+    border: 0;
+    background: #252835;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 0;
   }
 
   a.button:hover {
-    text-decoration: none;
+    background: #b3cde0;
+    color: #252835;
+    box-shadow: 0 0 5px #b3cde0, 0 0 25px #b3cde0, 0 0 50px #b3cde0,
+      0 0 200px #b3cde0;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #252835);
   }
 
-  .hvr-rotate {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
+  a.button span {
+    position: absolute;
+    display: block;
   }
-  .hvr-rotate:hover,
-  .hvr-rotate:focus,
-  .hvr-rotate:active {
-    -webkit-transform: rotate(4deg);
-    transform: rotate(4deg);
+
+  a.button span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #b3cde0);
+    animation: animate1 1s linear infinite;
+  }
+  @keyframes animate1 {
+    0% {
+      left: -100%;
+    }
+    50%,
+    100% {
+      left: 100%;
+    }
+  }
+  a.button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #b3cde0);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+  }
+  @keyframes animate2 {
+    0% {
+      top: -100%;
+    }
+    50%,
+    100% {
+      top: 100%;
+    }
+  }
+  a.button span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #b3cde0);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  @keyframes animate3 {
+    0% {
+      right: -100%;
+    }
+    50%,
+    100% {
+      right: 100%;
+    }
+  }
+
+  a.button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #b3cde0);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+  }
+  @keyframes animate4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,
+    100% {
+      bottom: 100%;
+    }
   }
 
   @media (max-width: 414px) {
@@ -83,10 +156,11 @@
       </li>
     {/each}
   </ul>
-  <a
-    href="https://blog.coreylanier.com"
-    target="_blank"
-    class="button hvr-rotate">
+  <a href="https://blog.coreylanier.com" target="_blank" class="button">
+    <span />
+    <span />
+    <span />
+    <span />
     View Rest
   </a>
 </section>
