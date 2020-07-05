@@ -201,7 +201,7 @@
           </a>
         </div>
 				<div>
-					<a href="https://trovo.live/coreydevs">
+					<a href="https://trovo.live/coreydevs" target="_blank">
 						<img src="assets/trovo.png" alt="Trovo" />
 					</a>
 				</div>
