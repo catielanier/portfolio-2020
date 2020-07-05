@@ -19,10 +19,10 @@
   }
   .contact-gap {
     margin-top: 35px;
-    max-width: 165px;
+    max-width: 225px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
   }
   .contact-gap div img {
@@ -200,6 +200,11 @@
             <img src="assets/twitter.png" alt="Twitter" />
           </a>
         </div>
+				<div>
+					<a href="https://trovo.live/coreydevs">
+						<img src="assets/trovo.png" alt="Trovo" />
+					</a>
+				</div>
       </div>
     </div>
     <div>
