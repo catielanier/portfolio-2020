@@ -21,6 +21,11 @@
 			file: "svelte",
 		},
 		{
+			name: "Nuxt",
+			type: "Frontend",
+			file: "nuxt",
+		},
+		{
 			name: "Electron",
 			type: "Frontend",
 			file: "electron",
@@ -34,6 +39,11 @@
 			name: "Apollo",
 			type: "Frontend",
 			file: "apollo",
+		},
+		{
+			name: "Kotlin",
+			type: "Frontend",
+			file: "kotlin",
 		},
 		{
 			name: "Node.js",
@@ -86,6 +96,16 @@
 			file: "jquery",
 		},
 		{
+			name: "Bootstrap",
+			type: "Frontend",
+			file: "bootstrap",
+		},
+		{
+			name: "Tailwind CSS",
+			type: "Frontend",
+			file: "tailwind",
+		},
+		{
 			name: "CSS",
 			type: "Frontend",
 			file: "css",
@@ -107,7 +127,7 @@
 	.grid-container {
 		display: grid;
 		margin-top: 75px;
-		grid-template-columns: repeat(5, 1fr);
+		grid-template-columns: repeat(6, 1fr);
 		grid-gap: 25px;
 	}
 
