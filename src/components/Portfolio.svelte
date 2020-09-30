@@ -21,7 +21,7 @@
 
 		{
 			title: "Vue Blog",
-			tools: "Vue / Vuex / Node.js / Express / MongoDB",
+			tools: "Nuxt / Vuex / CSS / Node.js / Express / MongoDB",
 			description:
 				"A Vue full stack app that I built to create a simple content management system and frontend for a blog. It allows for new user creation, user admin to create multiple authors, posting and commenting.",
 			previewLink: "https://blog.coreylanier.com",
