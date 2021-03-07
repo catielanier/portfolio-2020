@@ -55,7 +55,7 @@
 </style>
 
 <footer>
-	<div class="copyright">© 2020 Corey Lanier, all rights reserved.</div>
+	<div class="copyright">© 2021 Corey Lanier, all rights reserved.</div>
 	<div class="framework">
 		Created using
 		<a href="https://svelte.dev" target="_blank">
