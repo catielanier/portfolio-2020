@@ -5,12 +5,12 @@
 			lang: "en",
 		},
 		{
-			text: "大家好",
-			lang: "zh",
-		},
-		{
 			text: "여러분 안녕하세요",
 			lang: "ko",
+		},
+		{
+			text: "大家好",
+			lang: "zh",
 		},
 		{
 			text: "皆さんこんにちは",

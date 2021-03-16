@@ -24,7 +24,11 @@
 			"https://api.ipgeolocation.io/ipgeo?apiKey=54de6cf316574fa59a6580f75133b847"
 		);
 		ip = resIp.data.ip;
-		if (resIp.data.country_code2 === "KR") {
+		if (
+			resIp.data.country_code2 === "KR" ||
+			resIp.data.state_prov === "Indiana" ||
+			resIp.data.state_prov === "Hawaii"
+		) {
 			block = true;
 		}
 	});
