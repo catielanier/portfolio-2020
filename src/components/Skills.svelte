@@ -26,6 +26,11 @@
 			file: "nuxt",
 		},
 		{
+			name: "Next.js",
+			type: "Frontend",
+			file: "next",
+		},
+		{
 			name: "Electron",
 			type: "Frontend",
 			file: "electron",
@@ -42,7 +47,7 @@
 		},
 		{
 			name: "Kotlin",
-			type: "Frontend",
+			type: "Backend",
 			file: "kotlin",
 		},
 		{
@@ -127,7 +132,7 @@
 	.grid-container {
 		display: grid;
 		margin-top: 75px;
-		grid-template-columns: repeat(6, 1fr);
+		grid-template-columns: repeat(5, 1fr);
 		grid-gap: 25px;
 	}
 
