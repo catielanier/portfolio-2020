@@ -27,7 +27,8 @@
 		if (
 			resIp.data.country_code2 === "KR" ||
 			resIp.data.state_prov === "Indiana" ||
-			resIp.data.state_prov === "Hawaii"
+			resIp.data.state_prov === "Hawaii" ||
+			resIp.data.state_prov === "Kentucky"
 		) {
 			block = true;
 		}
