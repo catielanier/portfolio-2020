@@ -204,7 +204,7 @@
 	}
 </style>
 
-<section id="skills">
+<section>
 	<h2>Skills</h2>
 	<div class="grid-container">
 		{#each skills as skill, index}

@@ -123,7 +123,7 @@
 	}
 </style>
 
-<section id="portfolio">
+<section>
 	<h2>Portfolio</h2>
 	{#each portfolioPieces as piece, index}
 		<div class="grid-container" key={index}>
@@ -144,9 +144,7 @@
 					</a>
 				</div>
 			</div>
-			<div>
-				<img src={`assets/${piece.imageName}.png`} alt={piece.title} />
-			</div>
+			<div><img src={`assets/${piece.imageName}.png`} alt={piece.title} /></div>
 		</div>
 	{/each}
 </section>

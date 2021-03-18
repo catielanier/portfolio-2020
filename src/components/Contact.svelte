@@ -168,7 +168,7 @@
 	}
 </style>
 
-<section id="contact">
+<section>
 	<h2>Contact</h2>
 	<p>
 		Let's create internet masterpieces together! If you want to hire or

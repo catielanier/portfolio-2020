@@ -74,13 +74,13 @@
 	<MenuBar />
 	<Header />
 	<main>
-		<div class="divider div-transparent" />
+		<div class="divider div-transparent" id="skills" />
 		<Skills />
-		<div class="divider div-transparent" />
+		<div class="divider div-transparent" id="portfolio" />
 		<Portfolio />
-		<div class="divider div-transparent" />
+		<div class="divider div-transparent" id="blog" />
 		<Blog {posts} />
-		<div class="divider div-transparent" />
+		<div class="divider div-transparent" id="contact" />
 		<Contact {ip} {block} />
 	</main>
 </div>
