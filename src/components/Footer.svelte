@@ -1,6 +1,9 @@
 <style>
+	.footer-container {
+		padding-bottom: 20px;
+	}
 	footer {
-		margin: 40px auto 20px;
+		margin: 40px auto 0;
 		width: 100%;
 		max-width: 1280px;
 		background: #b3cde0;
@@ -54,12 +57,14 @@
 	}
 </style>
 
-<footer>
-	<div class="copyright">© 2021 Corey Lanier, all rights reserved.</div>
-	<div class="framework">
-		Created using
-		<a href="https://svelte.dev" target="_blank">
-			<span>Svelte</span>
-		</a>
-	</div>
-</footer>
+<div class="footer-container">
+	<footer>
+		<div class="copyright">© 2021 Corey Lanier, all rights reserved.</div>
+		<div class="framework">
+			Created using
+			<a href="https://svelte.dev" target="_blank">
+				<span>Svelte</span>
+			</a>
+		</div>
+	</footer>
+</div>
