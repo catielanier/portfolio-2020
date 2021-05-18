@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import MenuBar from "./components/MenuBar.svelte";
 	import Header from "./components/Header.svelte";
 	import Skills from "./components/Skills.svelte";
@@ -9,14 +9,14 @@
 	import { onMount } from "svelte";
 	import axios from "axios";
 	let posts = [];
-	let ip: string;
-	let block: boolean;
+	let ip;
+	let block;
 	onMount(async () => {
 		const blogPosts = [];
 		const res = await axios(
 			"https://protected-atoll-04619.herokuapp.com/api/posts/"
 		);
-		res.data.data.forEach((item: any) => {
+		res.data.data.forEach((item) => {
 			blogPosts.push(item);
 		});
 		posts = blogPosts;
