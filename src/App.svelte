@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import MenuBar from "./components/MenuBar.svelte";
 	import Header from "./components/Header.svelte";
 	import Skills from "./components/Skills.svelte";
@@ -9,14 +9,14 @@
 	import { onMount } from "svelte";
 	import axios from "axios";
 	let posts = [];
-	let ip;
-	let block = false;
+	let ip: string;
+	let block: boolean;
 	onMount(async () => {
 		const blogPosts = [];
 		const res = await axios(
 			"https://protected-atoll-04619.herokuapp.com/api/posts/"
 		);
-		res.data.data.forEach((item) => {
+		res.data.data.forEach((item: any) => {
 			blogPosts.push(item);
 		});
 		posts = blogPosts;
@@ -24,14 +24,11 @@
 			"https://api.ipgeolocation.io/ipgeo?apiKey=54de6cf316574fa59a6580f75133b847"
 		);
 		ip = resIp.data.ip;
-		if (
+		block =
 			resIp.data.country_code2 === "KR" ||
 			resIp.data.state_prov === "Indiana" ||
-			resIp.data.state_prov === "Hawaii" ||
-			resIp.data.state_prov === "Kentucky"
-		) {
-			block = true;
-		}
+			resIp.data.state_prov === "Kentucky" ||
+			resIp.data.state_prov === "Hawaii";
 	});
 </script>
 
