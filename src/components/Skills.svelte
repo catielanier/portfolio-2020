@@ -183,6 +183,7 @@
 
 	img {
 		height: 9rem;
+		max-width: 90%;
 	}
 
 	.skill-name {
