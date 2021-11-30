@@ -61,6 +61,16 @@
 			file: "express",
 		},
 		{
+			name: "Deno",
+			type: "Backend",
+			file: "deno",
+		},
+		{
+			name: "Go",
+			type: "Backend",
+			file: "go",
+		},
+		{
 			name: "Python",
 			type: "Backend",
 			file: "python",
@@ -76,9 +86,19 @@
 			file: "mongo",
 		},
 		{
+			name: "PostgreSQL",
+			type: "Backend",
+			file: "postgresql",
+		},
+		{
 			name: "Firebase",
 			type: "Backend",
 			file: "firebase",
+		},
+		{
+			name: "Supabase",
+			type: "Backend",
+			file: "supabase",
 		},
 		{
 			name: "GraphQL",
@@ -99,6 +119,11 @@
 			name: "jQuery",
 			type: "Frontend",
 			file: "jquery",
+		},
+		{
+			name: "Websockets",
+			type: "Frontend",
+			file: "websockets",
 		},
 		{
 			name: "Bootstrap",
@@ -128,12 +153,24 @@
 	];
 </script>
 
+<section>
+	<h2>Skills</h2>
+	<div class="grid-container">
+		{#each skills as skill, index}
+			<div key={index} class="skill">
+				<img src={`assets/${skill.file}.svg`} alt={skill.name} class="svg" />
+				<p class="skill-name">{skill.name}</p>
+			</div>
+		{/each}
+	</div>
+</section>
+
 <style>
 	.grid-container {
 		display: grid;
 		margin-top: 75px;
-		grid-template-columns: repeat(5, 1fr);
-		grid-gap: 25px;
+		grid-template-columns: repeat(6, 1fr);
+		grid-gap: 20px;
 	}
 
 	.grid-container div {
@@ -203,15 +240,3 @@
 		}
 	}
 </style>
-
-<section>
-	<h2>Skills</h2>
-	<div class="grid-container">
-		{#each skills as skill, index}
-			<div key={index} class="skill">
-				<img src={`assets/${skill.file}.svg`} alt={skill.name} class="svg" />
-				<p class="skill-name">{skill.name}</p>
-			</div>
-		{/each}
-	</div>
-</section>
