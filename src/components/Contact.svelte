@@ -183,11 +183,13 @@
 						<img src="assets/github.png" alt="Github" />
 					</a>
 				</div>
-				<div>
-					<a href="https://linkedin.com/in/cwlanier" target="_blank">
-						<img src="assets/linkedin.png" alt="LinkedIn" />
-					</a>
-				</div>
+				{#if !block}
+					<div>
+						<a href="https://linkedin.com/in/cwlanier" target="_blank">
+							<img src="assets/linkedin.png" alt="LinkedIn" />
+						</a>
+					</div>
+				{/if}
 				<div>
 					<a
 						href="https://www.upwork.com/freelancers/~0136715eaa3911f2ac"
@@ -195,11 +197,13 @@
 						<img src="assets/upwork.png" alt="Upwork" />
 					</a>
 				</div>
-				<div>
-					<a href="https://twitter.com/cwlanier" target="_blank">
-						<img src="assets/twitter.png" alt="Twitter" />
-					</a>
-				</div>
+				{#if !block}
+					<div>
+						<a href="https://twitter.com/cwlanier" target="_blank">
+							<img src="assets/twitter.png" alt="Twitter" />
+						</a>
+					</div>
+				{/if}
 				<div>
 					<a href="https://trovo.live/coreydevs" target="_blank">
 						<img src="assets/trovo.png" alt="Trovo" />
