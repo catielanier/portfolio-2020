@@ -1,5 +1,4 @@
 <script>
-	import axios from "axios";
 	export let ip;
 	export let block;
 	let name = "";
