@@ -7,6 +7,89 @@
 	let message = "";
 </script>
 
+<section>
+	<h2>Contact</h2>
+	<p>
+		Let's create internet masterpieces together! If you want to hire or
+		commission me for work, please contact me in one of the ways below.
+	</p>
+	<div class="grid-container">
+		<div>
+			<p class="email">Email: iam@coreylanier.com</p>
+			<div class="contact-gap">
+				<div>
+					<a href="https://github.com/lanierc" target="_blank">
+						<img src="assets/github.png" alt="Github" />
+					</a>
+				</div>
+				{#if !block}
+					<div>
+						<a href="https://linkedin.com/in/laniercw" target="_blank">
+							<img src="assets/linkedin.png" alt="LinkedIn" />
+						</a>
+					</div>
+				{/if}
+				<div>
+					<a
+						href="https://www.upwork.com/freelancers/~0136715eaa3911f2ac"
+						target="_blank"
+					>
+						<img src="assets/upwork.png" alt="Upwork" />
+					</a>
+				</div>
+				{#if !block}
+					<div>
+						<a href="https://twitter.com/claniernsj" target="_blank">
+							<img src="assets/twitter.png" alt="Twitter" />
+						</a>
+					</div>
+				{/if}
+				<div>
+					<a href="https://trovo.live/coreydevs" target="_blank">
+						<img src="assets/trovo.png" alt="Trovo" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			{#if !block}
+				<form action="https://formcarry.com/s/XrxTmMSz33Ei" method="POST">
+					<input
+						type="text"
+						name="name"
+						bind:value={name}
+						required
+						placeholder="Your name"
+					/>
+					<input
+						type="email"
+						name="email"
+						bind:value={email}
+						required
+						placeholder="Email address"
+					/>
+					<textarea
+						placeholder="Your message"
+						name="message"
+						bind:value={message}
+						required
+						cols="30"
+						rows="10"
+					/>
+					<input type="hidden" name="ip" bind:value={ip} />
+					<button type="submit">
+						<span />
+						<span />
+						<span />
+						<span />
+						Send email
+					</button>
+				</form>
+			{/if}
+		</div>
+	</div>
+</section>
+
 <style>
 	.grid-container {
 		display: grid;
@@ -167,82 +250,3 @@
 		}
 	}
 </style>
-
-<section>
-	<h2>Contact</h2>
-	<p>
-		Let's create internet masterpieces together! If you want to hire or
-		commission me for work, please contact me in one of the ways below.
-	</p>
-	<div class="grid-container">
-		<div>
-			<p class="email">Email: iam@coreylanier.com</p>
-			<div class="contact-gap">
-				<div>
-					<a href="https://github.com/lanierc" target="_blank">
-						<img src="assets/github.png" alt="Github" />
-					</a>
-				</div>
-				{#if !block}
-					<div>
-						<a href="https://linkedin.com/in/cwlanier" target="_blank">
-							<img src="assets/linkedin.png" alt="LinkedIn" />
-						</a>
-					</div>
-				{/if}
-				<div>
-					<a
-						href="https://www.upwork.com/freelancers/~0136715eaa3911f2ac"
-						target="_blank">
-						<img src="assets/upwork.png" alt="Upwork" />
-					</a>
-				</div>
-				{#if !block}
-					<div>
-						<a href="https://twitter.com/cwlanier" target="_blank">
-							<img src="assets/twitter.png" alt="Twitter" />
-						</a>
-					</div>
-				{/if}
-				<div>
-					<a href="https://trovo.live/coreydevs" target="_blank">
-						<img src="assets/trovo.png" alt="Trovo" />
-					</a>
-				</div>
-			</div>
-		</div>
-		<div>
-			{#if !block}
-				<form action="https://formcarry.com/s/XrxTmMSz33Ei" method="POST">
-					<input
-						type="text"
-						name="name"
-						bind:value={name}
-						required
-						placeholder="Your name" />
-					<input
-						type="email"
-						name="email"
-						bind:value={email}
-						required
-						placeholder="Email address" />
-					<textarea
-						placeholder="Your message"
-						name="message"
-						bind:value={message}
-						required
-						cols="30"
-						rows="10" />
-					<input type="hidden" name="ip" bind:value={ip} />
-					<button type="submit">
-						<span />
-						<span />
-						<span />
-						<span />
-						Send email
-					</button>
-				</form>
-			{/if}
-		</div>
-	</div>
-</section>

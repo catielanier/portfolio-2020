@@ -1,3 +1,15 @@
+<div class="footer-container">
+	<footer>
+		<div class="copyright">© 2020-2022 Corey Lanier, all rights reserved.</div>
+		<div class="framework">
+			Created using
+			<a href="https://svelte.dev" target="_blank">
+				<span>Svelte</span>
+			</a>
+		</div>
+	</footer>
+</div>
+
 <style>
 	.footer-container {
 		padding-bottom: 20px;
@@ -56,15 +68,3 @@
 		}
 	}
 </style>
-
-<div class="footer-container">
-	<footer>
-		<div class="copyright">© 2021 Corey Lanier, all rights reserved.</div>
-		<div class="framework">
-			Created using
-			<a href="https://svelte.dev" target="_blank">
-				<span>Svelte</span>
-			</a>
-		</div>
-	</footer>
-</div>
