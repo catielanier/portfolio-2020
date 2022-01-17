@@ -27,27 +27,12 @@
 							<img src="assets/linkedin.png" alt="LinkedIn" />
 						</a>
 					</div>
-				{/if}
-				<div>
-					<a
-						href="https://www.upwork.com/freelancers/~0136715eaa3911f2ac"
-						target="_blank"
-					>
-						<img src="assets/upwork.png" alt="Upwork" />
-					</a>
-				</div>
-				{#if !block}
 					<div>
 						<a href="https://twitter.com/claniernsj" target="_blank">
 							<img src="assets/twitter.png" alt="Twitter" />
 						</a>
 					</div>
 				{/if}
-				<div>
-					<a href="https://trovo.live/coreydevs" target="_blank">
-						<img src="assets/trovo.png" alt="Trovo" />
-					</a>
-				</div>
 			</div>
 		</div>
 		<div>
