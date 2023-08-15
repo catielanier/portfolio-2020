@@ -54,7 +54,7 @@
 		background-image: linear-gradient(
 			to right,
 			transparent,
-			rgb(179, 205, 224),
+			rgb(194,132,133),
 			transparent
 		);
 	}

@@ -75,7 +75,7 @@
 	p.tools {
 		margin-top: 0;
 		font-size: 1.5rem;
-		color: #b3cde0;
+		color: #c28485;
 	}
 	.link {
 		font-family: "Arvo", serif;
@@ -84,15 +84,15 @@
 	}
 	.link a {
 		text-decoration: underline;
-		color: #0557a3;
+		color: #f7a3b4;
 	}
 	span {
-		color: #fff;
+		color: #303030;
 		transition: all 0.3s ease-in-out;
 	}
 
 	.link a:hover span {
-		color: #0557a3;
+		color: #f7a3b4;
 	}
 
 	.grid-container img {

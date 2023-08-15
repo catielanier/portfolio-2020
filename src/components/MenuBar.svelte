@@ -31,7 +31,7 @@
 		list-style: none;
 		font-size: 2.4rem;
 		display: flex;
-		background: #b3cde0;
+		background: #c28485;
 		justify-content: space-around;
 		margin: 0;
 		padding: 15px 0 20px;
@@ -41,12 +41,12 @@
 		text-transform: capitalize;
 	}
 	a {
-		color: #252835;
+		color: #fff;
 		transition: all 0.3s ease-in-out;
 	}
 	a:hover {
 		text-decoration: none;
-		color: #fff;
+		color: #303030;
 	}
 
 	.menu {

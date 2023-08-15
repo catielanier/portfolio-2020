@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  color: #fff;
+  color: #303030;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,7 +18,7 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   max-width: 1280px;
   margin: 0 auto;
-  background: #252835;
+  background: #fcccd3;
   overflow-x: hidden;
 }
 

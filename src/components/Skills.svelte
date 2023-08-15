@@ -175,7 +175,7 @@
 
 	.grid-container div {
 		text-align: center;
-		border: 1px solid #252835;
+		border: 1px solid #fcccd3;
 		border-radius: 5px;
 		transition: all 0.3s ease-in-out;
 		padding: 10px;
@@ -187,22 +187,22 @@
 	}
 
 	.skill-name {
-		color: #252835;
+		color: #fcccd3;
 		margin-bottom: 5px;
 		transition: all 0.3s ease-in-out;
 	}
 
 	.skill:hover .skill-name {
-		color: #fff;
+		color: #303030;
 	}
 
 	.skill:hover {
-		border: 1px solid #fff;
+		border: 1px solid #303030;
 	}
 
 	@media (max-width: 1024px) {
 		.skill-name {
-			color: #fff;
+			color: #303030;
 		}
 		.grid-container {
 			grid-gap: 0;

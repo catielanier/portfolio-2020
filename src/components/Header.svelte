@@ -140,10 +140,10 @@
 			knowledge and skills, I bring curiosity, enthusiasm, and a whole lot of
 			care to everything I do.
 		</p>
-  <p>
-   Outside of coding, I enjoy playing video games, playing bass guitar, 
-   shopping and fashion, and spending time with my cats.
-  </p>
+		<p>
+			Outside of coding, I enjoy playing video games, playing bass guitar, 
+			shopping and fashion, and spending time with my cats.
+		</p>
 	</div>
 	<div>
 		<div class="header-image">
