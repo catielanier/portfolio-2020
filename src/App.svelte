@@ -8,6 +8,7 @@
 	import Blog from "./components/Blog.svelte";
 	import { onMount } from "svelte";
 	import axios from "axios";
+	import { COUNTRIES, STATES } from './utils/constants';
 	let posts = [];
 	let ip;
 	let block;
@@ -25,10 +26,8 @@
 		);
 		ip = resIp.data.ip;
 		block =
-			resIp.data.country_code2 === "KR" ||
-			resIp.data.state_prov === "Indiana" ||
-			resIp.data.state_prov === "Kentucky" ||
-			resIp.data.state_prov === "Hawaii";
+			COUNTRIES.includes(resIp.data.country_code2) ||
+			STATES.includes(resIp.data.state_prov)
 	});
 </script>
 
