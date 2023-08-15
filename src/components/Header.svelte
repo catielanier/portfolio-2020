@@ -122,7 +122,7 @@
 			<span id="typed" />
 		</h1>
 		<p>
-			My name is Corey Lanier, and I am a multilingual (English, Mandarin,
+			My name is Corey Lanier (pronouns they/them), and I am a non-binary multilingual (English, Mandarin,
 			Korean, Japanese, Esperanto) full stack developer based in Toronto. I am a
 			graduate of Juno College's Web Development Immersive, and am completely
 			fluent in Front End and Full Stack development.
@@ -140,6 +140,10 @@
 			knowledge and skills, I bring curiosity, enthusiasm, and a whole lot of
 			care to everything I do.
 		</p>
+  <p>
+   Outside of coding, I enjoy playing video games, playing bass guitar, 
+   shopping and fashion, and spending time with my cats.
+  </p>
 	</div>
 	<div>
 		<div class="header-image">
