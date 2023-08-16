@@ -98,11 +98,11 @@
 	input,
 	textarea {
 		width: 100%;
-		background: #252835;
-		color: #fff;
+		background: #fcccd3;
+		color: #303030;
 		border: 0;
 		border-radius: 5px;
-		border-bottom: 2px solid #0557a3;
+		border-bottom: 2px solid #f7a3b4;
 		font-family: "Arvo", serif;
 		font-size: 1.8rem;
 		transition: 0.5 all ease-in-out;
@@ -113,7 +113,7 @@
 	}
 	input::placeholder,
 	textarea::placeholder {
-		color: #fff;
+		color: #303030;
 	}
 
 	button {
@@ -121,7 +121,7 @@
 		display: inline-block;
 		padding: 25px 30px;
 		margin: 40px 0;
-		color: #b3cde0;
+		color: #c28485;
 		text-decoration: none;
 		text-transform: uppercase;
 		transition: 0.5s;
@@ -131,17 +131,17 @@
 		font-family: "Comfortaa", serif;
 		font-size: 1.6rem;
 		border: 0;
-		background: #252835;
+		background: #fcccd3;
 		font-weight: bold;
 		border-radius: 0;
 	}
 
 	button:hover {
-		background: #b3cde0;
-		color: #252835;
-		box-shadow: 0 0 5px #b3cde0, 0 0 25px #b3cde0, 0 0 50px #b3cde0,
-			0 0 200px #b3cde0;
-		-webkit-box-reflect: below 1px linear-gradient(transparent, #252835);
+		background: #c28485;
+		color: #fcccd3;
+		box-shadow: 0 0 5px #c28485, 0 0 25px #c28485, 0 0 50px #c28485,
+			0 0 200px #c28485;
+		-webkit-box-reflect: below 1px linear-gradient(transparent, #fcccd3);
 	}
 
 	button span {
@@ -154,7 +154,7 @@
 		left: 0;
 		width: 100%;
 		height: 2px;
-		background: linear-gradient(90deg, transparent, #b3cde0);
+		background: linear-gradient(90deg, transparent, #c28485);
 		animation: animate1 1s linear infinite;
 	}
 	@keyframes animate1 {
@@ -171,7 +171,7 @@
 		right: 0;
 		width: 2px;
 		height: 100%;
-		background: linear-gradient(180deg, transparent, #b3cde0);
+		background: linear-gradient(180deg, transparent, #c28485);
 		animation: animate2 1s linear infinite;
 		animation-delay: 0.25s;
 	}
@@ -189,7 +189,7 @@
 		right: 0;
 		width: 100%;
 		height: 2px;
-		background: linear-gradient(270deg, transparent, #b3cde0);
+		background: linear-gradient(270deg, transparent, #c28485);
 		animation: animate3 1s linear infinite;
 		animation-delay: 0.5s;
 	}
@@ -208,7 +208,7 @@
 		left: 0;
 		width: 2px;
 		height: 100%;
-		background: linear-gradient(360deg, transparent, #b3cde0);
+		background: linear-gradient(360deg, transparent, #c28485);
 		animation: animate4 1s linear infinite;
 		animation-delay: 0.75s;
 	}
