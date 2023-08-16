@@ -54,7 +54,7 @@
 		width: 45px;
 		height: 45px;
 		z-index: 5;
-		background: #252835;
+		background: #fcccd3;
 		border-radius: 5px;
 	}
 
@@ -74,13 +74,17 @@
 		right: -100%;
 		transition: all 0.5s ease-in-out;
 		z-index: 10;
-		background: #b3cde0;
+		background: #c28485;
 	}
 
 	.mobile-menu.show {
 		display: block;
 		top: 0;
 		right: 0;
+	}
+
+	.show a {
+		color: #303030;
 	}
 
 	.close-menu {
