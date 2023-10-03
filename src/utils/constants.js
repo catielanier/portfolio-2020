@@ -1,3 +1,3 @@
-export const COUNTRIES = ['kr'];
+export const COUNTRIES = ["KR"];
 
-export const STATES = ['Hawaii', 'Kentucky', 'Indiana'];
+export const STATES = ["Hawaii", "Kentucky", "Indiana"];
