@@ -17,6 +17,10 @@
 			lang: "ja",
 		},
 		{
+			text: "Bonjour à tous!",
+			lang: "fr"
+		},
+		{
 			text: "Saluton al ĉiuj",
 			lang: "eo",
 		},
