@@ -8,28 +8,42 @@
 	import Blog from "./components/Blog.svelte";
 	import { onMount } from "svelte";
 	import axios from "axios";
-	import { COUNTRIES, STATES } from './utils/constants';
+	import { COUNTRIES } from "./utils/constants";
 	let posts = [];
 	let ip;
-	let block;
+	let isKr;
 	onMount(async () => {
 		const blogPosts = [];
 		const res = await axios(
-			"https://protected-atoll-04619.herokuapp.com/api/posts/"
+			"https://protected-atoll-04619.herokuapp.com/api/posts/",
 		);
 		res.data.data.forEach((item) => {
 			blogPosts.push(item);
 		});
 		posts = blogPosts;
 		const resIp = await axios.get(
-			"https://api.ipgeolocation.io/ipgeo?apiKey=54de6cf316574fa59a6580f75133b847"
+			"https://api.ipgeolocation.io/ipgeo?apiKey=54de6cf316574fa59a6580f75133b847",
 		);
 		ip = resIp.data.ip;
-		block =
-			COUNTRIES.includes(resIp.data.country_code2) ||
-			STATES.includes(resIp.data.state_prov)
+		isKr = COUNTRIES.includes(resIp.data.country_code2);
 	});
 </script>
+
+<div class="container">
+	<MenuBar />
+	<Header />
+	<main>
+		<div class="divider div-transparent" id="skills" />
+		<Skills />
+		<div class="divider div-transparent" id="portfolio" />
+		<Portfolio />
+		<div class="divider div-transparent" id="blog" />
+		<Blog {posts} />
+		<div class="divider div-transparent" id="contact" />
+		<Contact {ip} {isKr} />
+	</main>
+</div>
+<Footer />
 
 <style>
 	.container {
@@ -54,7 +68,7 @@
 		background-image: linear-gradient(
 			to right,
 			transparent,
-			rgb(194,132,133),
+			rgb(194, 132, 133),
 			transparent
 		);
 	}
@@ -65,19 +79,3 @@
 		}
 	}
 </style>
-
-<div class="container">
-	<MenuBar />
-	<Header />
-	<main>
-		<div class="divider div-transparent" id="skills" />
-		<Skills />
-		<div class="divider div-transparent" id="portfolio" />
-		<Portfolio />
-		<div class="divider div-transparent" id="blog" />
-		<Blog {posts} />
-		<div class="divider div-transparent" id="contact" />
-		<Contact {ip} {block} />
-	</main>
-</div>
-<Footer />

@@ -15,6 +15,13 @@ const typed = new Typed("#typed", {
   smartBackspace: true,
 });
 
+const voiceOfGodTyped = new Typed("#typedVog", {
+  stringsElement: "#voice-of-god",
+  typeSpeed: 45,
+  backSpeed: 0,
+  loop: false
+})
+
 const scroll = new SmoothScroll('a[href*="#"]');
 
 export default app;

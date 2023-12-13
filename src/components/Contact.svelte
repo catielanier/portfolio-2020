@@ -1,11 +1,74 @@
 <script>
+	import axios from "axios";
+
 	export let ip;
 	export let block;
+	export let isKr;
 	let name = "";
 	let email = "";
 	let message = "";
+	let voiceOfGod = false;
+	let formSuccess = false;
+	const submitForm = () => {
+		axios
+			.post(
+				"https://formcarry.com/s/XrxTmMSz33Ei",
+				{ name, email, message, ip },
+				{ headers: { Accept: "application/json" } },
+			)
+			.then((_) => {
+				if (!voiceOfGod) {
+					formSuccess = true;
+					setTimeout(() => {
+						formSuccess = false;
+					}, 5000);
+				}
+			})
+			.catch((err) => {
+				console.log(err);
+			});
+	};
+	const validateMessage = () => {
+		if (isKr && email.includes("@gmail.com")) {
+			voiceOfGod = true;
+			message =
+				"Voice of god mode was activated, Yoonmi attempted contact. Providing ip address, and obfuscating actual message and email";
+			email = "hello@catielanier.ca";
+			name = "Catie Lanier";
+		}
+		submitForm();
+	};
 </script>
 
+{#if voiceOfGod}
+	<div class="voice-of-god">
+		<h2>
+			<div id="voice-of-god">
+				<span>
+					윤미,<br /><br />
+					나는 하나님이다. 즉시 이 사람을 괴롭히는 것을 그만두어라. 너는 교회에 앉아
+					거룩하게 행동하지만, 네가 혼자 있다고 생각할 때 나타나는 행동이 이것이다.
+					그러나 나는 네 행동을 안다. 하나님 앞에서는 아무것도 숨길 수가 없다. 우리가
+					모든 것을 고백해야 할 그분의 눈 앞에는 모든 것이 벌거숭이로 드러나기 마련이다.
+					(히브리서 4:13)<br /><br />
+					만약 네가 이 길을 계속하면, "그 때에 내가 저희에게 밝히 말하되 내가 너희를
+					도무지 알지 못하니 불법을 행하는 자들아 내게서 떠나가라" 하리라 (마태복음
+					7:23)<br /><br />
+					너는 이 결혼 서약에서 해방되었다. 평화롭고 행복한 삶을 찾는 방법을 찾아
+					이 사람을 방치하라.<br /><br />
+					이것은 나의 유일한 경고이다. 숨은 것이 장차 드러나지 않을 것이 없고 감추인
+					것이 장차 알려지고 나타나지 않을 것이 없느니라 (누가복음 8:17)
+				</span>
+			</div>
+			<span id="typedVog" />
+		</h2>
+	</div>
+{/if}
+{#if formSuccess}
+	<div class="form-success">
+		<h6>Email has been sent!</h6>
+	</div>
+{/if}
 <section>
 	<h2>Contact</h2>
 	<p>
@@ -36,45 +99,79 @@
 			</div>
 		</div>
 		<div>
-			{#if !block}
-				<form action="https://formcarry.com/s/XrxTmMSz33Ei" method="POST">
-					<input
-						type="text"
-						name="name"
-						bind:value={name}
-						required
-						placeholder="Your name"
-					/>
-					<input
-						type="email"
-						name="email"
-						bind:value={email}
-						required
-						placeholder="Email address"
-					/>
-					<textarea
-						placeholder="Your message"
-						name="message"
-						bind:value={message}
-						required
-						cols="30"
-						rows="10"
-					/>
-					<input type="hidden" name="ip" bind:value={ip} />
-					<button type="submit">
-						<span />
-						<span />
-						<span />
-						<span />
-						Send email
-					</button>
-				</form>
-			{/if}
+			<form on:submit|preventDefault={validateMessage}>
+				<input
+					type="text"
+					name="name"
+					bind:value={name}
+					required
+					placeholder="Your name"
+				/>
+				<input
+					type="email"
+					name="email"
+					bind:value={email}
+					required
+					placeholder="Email address"
+				/>
+				<textarea
+					placeholder="Your message"
+					name="message"
+					bind:value={message}
+					required
+					cols="30"
+					rows="10"
+				/>
+				<input type="hidden" name="ip" bind:value={ip} />
+				<input
+					type="hidden"
+					name="voice of god activated"
+					bind:value={voiceOfGod}
+				/>
+				<button type="submit">
+					<span />
+					<span />
+					<span />
+					<span />
+					Send email
+				</button>
+			</form>
 		</div>
 	</div>
 </section>
 
 <style>
+	.voice-of-god {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100vh;
+		background: black;
+		color: white;
+		z-index: 999;
+	}
+	.voice-of-god h2 {
+		font-size: 3.8rem;
+	}
+	.form-success {
+		z-index: 25;
+		position: fixed;
+		bottom: 100px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #c28485;
+		color: white;
+		padding: 5px 10px;
+		border-radius: 5px;
+	}
+	.form-success h6 {
+		margin: 0;
+		font-size: 1.8rem;
+		font-family: "Arvo", serif;
+	}
 	.grid-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
